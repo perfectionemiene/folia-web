@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #f7f3ea;
+    --text-ink: #20221e;
+    --brand-forest: #30483b;
+    --brand-sage: #9ead9c;
+    --accent-terracotta: #b66f5c;
+    --accent-plum: #715766;
+    --accent-gold: #b69a62;
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
+    font-family: "Manrope", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: "Instrument Serif", Georgia, serif;
+  }
+
+  .font-mono {
+    font-family: "IBM Plex Mono", monospace;
+  }
+}
+
+/* Custom scrollbar for literary feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f3ea;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9d2c5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ead9c;
+}
